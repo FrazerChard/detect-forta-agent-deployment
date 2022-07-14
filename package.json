@@ -1,5 +1,5 @@
 {
-  "name": "polygon-forta-bot-deployment-detection-bot",
+  "name": "forta-bot-deployment-detection-bot",
   "version": "0.0.1",
   "description": "Forta Bot that detects the deployment of Forta bots through the registry on the Polygon network",
   "respository": "https://github.com/FrazerChard/detect-forta-agent-deployment/",
