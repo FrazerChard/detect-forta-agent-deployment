@@ -12,7 +12,7 @@ export const generateFinding = (args: any, address: string): Finding => {
       metadata: args.metadata,
       chainIDs: args.chainIds.toString(),
     },
-    protocol: "polygon",
+    protocol: "Forta",
     addresses: [address],
   });
 };

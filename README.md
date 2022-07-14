@@ -13,13 +13,16 @@ This bot detects when Forta Bots are deployed from the Nethermind deployment add
 Describe each of the type of alerts fired by this bot
 
 - FORTA-1
-  - Fired when a Forta Bot is deployed from Nethermind: "0x88dc3a2284fa62e0027d6d6b1fcfdd2141a143b8" 
+  - Fired when a Forta Bot is deployed from Nethermind 
   - Severity is always set to "info"
   - Type is always set to "info
+  - Protocol: Forta
+  - Addresses:
+    - `Nethermind Deployer Address`: 0x88dc3a2284fa62e0027d6d6b1fcfdd2141a143b8
   - Metadata
-    - 'agentId': The ID for the Forta Bot
-    - 'metadata': The IPFS reference to the metadata for the bot
-    - 'chainIDs': The chainIDs for the bot
+    - `agentId`: The ID for the Forta Bot
+    - `metadata`: The IPFS reference to the metadata for the bot
+    - `chainIDs`: The chainIDs for the bot
 
 ## Test Data
 
