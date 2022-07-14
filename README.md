@@ -1,8 +1,8 @@
-# Detect Nethermind Forta Agent Deployment
+# Detect Nethermind Forta Bot Deployment
 
 ## Description
 
-This agent detects when Forta Agents are deployed from the Nethermind deployment address
+This bot detects when Forta Bots are deployed from the Nethermind deployment address
 
 ## Supported Chains
 
@@ -10,17 +10,17 @@ This agent detects when Forta Agents are deployed from the Nethermind deployment
 
 ## Alerts
 
-Describe each of the type of alerts fired by this agent
+Describe each of the type of alerts fired by this bot
 
 - FORTA-1
-  - Fired when a Forta Agent is deployed from Nethermind: "0x88dc3a2284fa62e0027d6d6b1fcfdd2141a143b8" 
+  - Fired when a Forta Bot is deployed from Nethermind: "0x88dc3a2284fa62e0027d6d6b1fcfdd2141a143b8" 
   - Severity is always set to "info" (mention any conditions where it could be something else)
   - Type is always set to "info" (mention any conditions where it could be something else)
   - Metadata includes : {agentId, metadata, chainIDs}
 
 ## Test Data
 
-The agent behaviour can be verified with the following transactions:
+The bot behaviour can be verified with the following transactions:
 
 - tx: 0xdc656b54c52391725f883be8c9d3c0408992ba3c6665b3e38a02477f04c8a5fd 
    - (0 findings as it does not contain a createAgent call)
