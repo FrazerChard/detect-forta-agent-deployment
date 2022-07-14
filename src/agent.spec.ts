@@ -9,7 +9,7 @@ describe("Monitor Nethermind Agent Deployment Function Calls", () => {
   const mockAddress = createAddress("0x123");
 
   beforeAll(() => {
-    handleTransaction = provideHandleTransaction();
+    handleTransaction = provideHandleTransaction(NETH_DEPLOYER_ADDRESS, FORTA_PROXY_CONTRACT);
   });
 
   describe("Handle Transaction", () => {

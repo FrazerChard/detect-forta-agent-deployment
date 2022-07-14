@@ -2,7 +2,10 @@ import { Finding, HandleTransaction, TransactionEvent } from "forta-agent";
 import { FORTA_CREATE_FUNCTION, NETH_DEPLOYER_ADDRESS, FORTA_PROXY_CONTRACT } from "./constants";
 import { generateFinding } from "./utils";
 
-export function provideHandleTransaction(NETH_DEPLOYER_ADDRESS: string, FORTA_PROXY_CONTRACT: string): HandleTransaction {
+export function provideHandleTransaction(
+  NETH_DEPLOYER_ADDRESS: string,
+  FORTA_PROXY_CONTRACT: string
+): HandleTransaction {
   return async (txEvent: TransactionEvent): Promise<Finding[]> => {
     const findings: Finding[] = [];
     if (txEvent.from != NETH_DEPLOYER_ADDRESS.toLowerCase()) return findings;
