@@ -1,9 +1,9 @@
 import { Finding, FindingSeverity, FindingType } from "forta-agent";
 
-export const generateFinding = (name: string, args: any, address: string): Finding => {
+export const generateFinding = (args: any, address: string): Finding => {
   return Finding.fromObject({
     name: "Nethermind Bot Deployment Detetion",
-    description: `${name.toLowerCase()} function call detected.`,
+    description: "CreateAgent function call detected.",
     alertId: "FORTA-BOT-1",
     severity: FindingSeverity.Info,
     type: FindingType.Info,
