@@ -1,7 +1,7 @@
 {
-  "name": "forta-bot-deployment-detection-bot",
+  "name": "polygon-forta-bot-deployment-detection-bot",
   "version": "0.0.1",
-  "description": "Forta Bot that detects the deployment of Forta bots",
+  "description": "Forta Bot that detects the deployment of Forta bots through the registry on the Polygon network",
   "respository": "https://github.com/FrazerChard/detect-forta-agent-deployment/",
   "chainIds": [
     137
@@ -23,7 +23,7 @@
     "enable": "forta-agent enable",
     "keyfile": "forta-agent keyfile",
     "test": "jest",
-    "format": "prettier --write \"src/**/*.ts\"",
+    "format": "prettier --write \"src/**/*.ts\""
   },
   "dependencies": {
     "forta-agent": "^0.1.8",
