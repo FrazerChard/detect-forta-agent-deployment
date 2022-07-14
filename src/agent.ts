@@ -3,8 +3,8 @@ import { FORTA_CREATE_FUNCTION, NETH_DEPLOYER_ADDRESS, FORTA_PROXY_CONTRACT } fr
 import { generateFinding } from "./utils";
 
 export function provideHandleTransaction(
-  NETH_DEPLOYER_ADDRESS: string,
-  FORTA_PROXY_CONTRACT: string
+  nethDeployerAddress: string,
+  fortaProxyContract: string
 ): HandleTransaction {
   return async (txEvent: TransactionEvent): Promise<Finding[]> => {
     const findings: Finding[] = [];
